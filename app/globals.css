@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .grid-container {
+    @apply grid grid-cols-12 gap-x-[32px];
+  }
+
+  .container {
+    @apply max-w-[1204px] w-full mx-auto px-3;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+:root {
+  /* light theme tokens */
+  --background-primary-light: 255, 255, 255;
+  --accent-light: 26, 26, 26;
+  --description-light: 102, 112, 133;
+
+  /* dark theme tokens */
+  --background-primary-dark: 9, 13, 31;
+  --accent-dark: 255, 255, 255;
+  --description-dark: 192, 197, 208;
+}
+
+/* map tokens to proper theme */
+[data-theme="light"] {
+  --background-primary: var(--background-primary-light);
+  --accent: var(--accent-light);
+  --description: var(--description-light);
+}
+
+[data-theme="dark"] {
+  --background-primary: var(--background-primary-dark);
+  --accent: var(--accent-dark);
+  --description: var(--description-dark);
+}
