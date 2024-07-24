@@ -4,6 +4,8 @@ import { useContext } from "react";
 import { UiToggler } from "../uikit/ui-toggler";
 import { ValeevWebRowIcon } from "@/public/icons/valeev-web-row-icon";
 import { ThemeContext } from "../ThemeProvider";
+import Link from "next/link";
+import clsx from "clsx";
 
 export function Header() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -20,9 +22,14 @@ export function Header() {
   return (
     <header className="flex-[0_1_auto] pt-[30px]">
       <div className="container flex justify-between items-center py-[18px]">
-        <div className="text-[20px] font-semibold leading-6">
-          <ValeevWebRowIcon className={theme === "light" ? "#fff" : "#000"} />
-        </div>
+        <Link
+          href="./"
+          className={clsx(
+            "text-[20px] font-semibold leading-6 hover:text-[#52bcd6] transition-colors",
+          )}
+        >
+          <ValeevWebRowIcon textColor={theme === "light" ? "#000" : "#fff"} />
+        </Link>
         <div className="flex items-center gap-x-[22px]">
           <ul className="flex gap-x-[22px] items-center">
             <li>
