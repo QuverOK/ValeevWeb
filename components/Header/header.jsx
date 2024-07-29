@@ -20,7 +20,7 @@ export function Header() {
   }
 
   return (
-    <header className="flex-[0_1_auto] pt-[30px]">
+    <header className="pt-[30px]">
       <div className="container flex justify-between items-center py-[18px]">
         <Link
           href="./"
@@ -33,7 +33,7 @@ export function Header() {
         <div className="flex items-center gap-x-[22px]">
           <ul className="flex gap-x-[22px] items-center">
             <li>
-              <a href="#" className="text-[20px] leading-6">
+              <a href="./blogs" className="text-[20px] leading-6">
                 Блоги
               </a>
             </li>

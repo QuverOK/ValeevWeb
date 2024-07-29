@@ -1,6 +1,6 @@
-export function Footer({footerLinks}) {
+export function Footer({ footerLinks }) {
   return (
-    <footer className="flex-[0_1_auto] py-[30px]">
+    <footer className="py-[30px] shrink-0">
       <div className="container">
         <ul className="flex gap-[14px]">
           <li className="text-xl">© 2024</li>
@@ -15,6 +15,5 @@ export function Footer({footerLinks}) {
         </ul>
       </div>
     </footer>
-  )
+  );
 }
-

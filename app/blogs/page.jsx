@@ -1,23 +1,20 @@
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
-import { Overview } from "../components/Overview";
-import { FOOTER_LINKS } from "../helpers/logic/variables";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { FOOTER_LINKS } from "@/helpers/logic/variables";
 
-export default function Home() {
+export default function Blogs() {
   return (
     <ThemeProvider>
-      <HomeLayout
+      <BlogsLayout
         header={<Header />}
         footer={<Footer footerLinks={FOOTER_LINKS} />}
-      >
-        <Overview />
-      </HomeLayout>
+      ></BlogsLayout>
     </ThemeProvider>
   );
 }
 
-function HomeLayout({ header, footer, children }) {
+function BlogsLayout({ header, footer, children }) {
   return (
     <div className="bg-[rgb(var(--background-primary))] text-[rgb(var(--accent))] flex flex-col min-h-[100vh]">
       {header}
