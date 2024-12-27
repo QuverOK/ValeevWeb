@@ -3,7 +3,6 @@ import { HeroLayout } from "../ui/layout";
 import { HeroContainerText } from "../ui/text-container";
 import { HeroText } from "../ui/text";
 
-
 export const Hero = () => {
   return (
     <HeroLayout>

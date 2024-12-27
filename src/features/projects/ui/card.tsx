@@ -44,7 +44,9 @@ export const ProjectsCard = ({
   link,
 }: ProjectsCardProps) => {
   return (
-    <Link href={link} style={styles.link}>
+    <Link href={link} target="_blank" style={styles.link}>
+      {" "}
+      {/* // !TEMP _blank  */}
       <Card sx={styles.card}>
         <CardContent sx={styles.cardContent}>
           <Typography

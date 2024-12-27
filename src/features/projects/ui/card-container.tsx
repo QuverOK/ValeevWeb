@@ -7,5 +7,5 @@ export function ProjectsCardContainer({
 }: {
   children: React.ReactNode;
 }) {
-  return <Box sx={{ display: "flex", gap: "32px",  }}>{children}</Box>;
+  return <Box sx={{ display: "flex", gap: "32px" }}>{children}</Box>;
 }
