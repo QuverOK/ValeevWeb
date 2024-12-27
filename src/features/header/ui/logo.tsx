@@ -7,6 +7,10 @@ type HeaderLogoProps = {
   children: React.ReactNode;
 };
 
+const linkStyles = {
+  textDecoration: "none",
+};
+
 export const HeaderLogo = ({ children }: HeaderLogoProps) => {
   const currentRoute = usePathname();
   return (
@@ -14,8 +18,8 @@ export const HeaderLogo = ({ children }: HeaderLogoProps) => {
       href="/"
       passHref
       style={{
+        ...linkStyles,
         cursor: currentRoute === "/" ? "default" : "pointer",
-        textDecoration: "none",
       }}
     >
       <Typography

@@ -1,11 +1,11 @@
 import { Typography } from "@mui/material";
 import { paletteColors } from "../styles/paletteVariables";
 
-type SectionTitleProps = {
+type UiSectionTitleProps = {
   children: React.ReactNode;
 };
 
-export const SectionTitle = ({ children }: SectionTitleProps) => {
+export const UiSectionTitle = ({ children }: UiSectionTitleProps) => {
   return (
     <Typography
       variant="h3"

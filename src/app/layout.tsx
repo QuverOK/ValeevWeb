@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   description: "Danila Valeev's personal website",
 };
 
+const bodyContainerStyles = {
+  display: "flex",
+  flexDirection: "column",
+  gap: "80px",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,16 +26,7 @@ export default function RootLayout({
         <AppRouterCacheProvider options={{ key: "css" }}>
           <ThemeProvider theme={theme}>
             <CssBaseline />
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "80px",
-                height: "100vh",
-              }}
-            >
-              {children}
-            </Box>
+            <Box sx={bodyContainerStyles}>{children}</Box>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>

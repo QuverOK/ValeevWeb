@@ -1,3 +1,4 @@
 export * from "./styles/paletteVariables";
-export { SectionTitle } from "./ui/section-title";
+export * from "./model/navigationList";
+export { UiSectionTitle } from "./ui/section-title";
 export { theme } from "./styles/theme";
