@@ -1,15 +1,15 @@
-type Styles = {
+type PaletteColors = {
   primary: `#${string}`;
   secondary: `#${string}`;
   background: `#${string}`;
-  text: `#${string}`;
+  textPrimary: `#${string}`;
   accent: `#${string}`;
 };
 
-export const styles: Styles = {
+export const paletteColors: PaletteColors = {
   primary: "#363636",
   secondary: "#919191",
   background: "#FCF8F8",
-  text: "#2B2B2B",
+  textPrimary: "#2B2B2B",
   accent: "#fff",
 };
