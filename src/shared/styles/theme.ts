@@ -82,7 +82,6 @@ export const theme = createTheme({
     },
     background: {
       default: paletteColors.background,
-      paper: paletteColors.background,
     },
   },
 });

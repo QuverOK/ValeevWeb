@@ -26,7 +26,7 @@ export const projects = [
     githubLink: "https://github.com/QuverOK/ValeevWeb",
   },
   {
-    id: "3",
+    id: "4",
     name: "Danila Valeev",
     description:
       "В этом проекте я попрактиковал и впервые использовал RTK, RTK Query, а также перенес проект полностью на TypeScript",
@@ -34,7 +34,7 @@ export const projects = [
     githubLink: "https://github.com/QuverOK/ValeevWeb",
   },
   {
-    id: "3",
+    id: "5",
     name: "Danila Valeev",
     description:
       "В этом проекте я попрактиковал и впервые использовал RTK, RTK Query, а также перенес проект полностью на TypeScript",

@@ -25,9 +25,4 @@ export const navigationList: NavigationItem[] = [
     title: "Обо мне",
     route: "/about",
   },
-  {
-    id: "5",
-    title: "Рассылка",
-    route: "/newsLetter",
-  },
 ];

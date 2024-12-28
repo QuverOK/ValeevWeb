@@ -6,10 +6,10 @@ type PaletteColors = {
   accent: `#${string}`;
 };
 
-export const paletteColors: PaletteColors = {
+export const paletteColors : PaletteColors = {
   primary: "#363636",
   secondary: "#919191",
-  background: "#FCF8F8",
+  background: "#FCFCFC",
   textPrimary: "#2B2B2B",
-  accent: "#fff",
+  accent: "#94A8A1",
 };

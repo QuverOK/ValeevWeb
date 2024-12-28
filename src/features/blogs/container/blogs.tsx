@@ -7,18 +7,21 @@ import { BlogsCard } from "../ui/card";
 import { blogs as blogPosts } from "@/entities/mock";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel } from "swiper/modules";
 import "swiper/css";
 
 export const Blogs = () => {
-  const cards = blogPosts; // !TEMP
+  const cards = [...blogPosts].sort((postA, postB) => new Date(postB.creationDate).getTime() - new Date(postA.creationDate).getTime());   // !TEMP
 
   return (
     <BlogsLayout>
       <UiSectionTitle>Статьи</UiSectionTitle>
       <BlogsCardsLayout>
         <Swiper
-          spaceBetween={25}
+          spaceBetween={20}
           slidesPerView={5}
+          mousewheel={true} 
+          modules={[Mousewheel]} 
           onSwiper={(swiper) => console.log(swiper)}
         >
           {cards.map((card) => (
