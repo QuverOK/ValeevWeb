@@ -2,7 +2,6 @@ export type NavigationItem = {
   id: string;
   title: string;
   route: string;
-  isActive?: boolean;
 };
 
 export const navigationList: NavigationItem[] = [

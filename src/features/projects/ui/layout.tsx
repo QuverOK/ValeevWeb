@@ -13,5 +13,9 @@ const styles = {
 };
 
 export function ProjectsLayout({ children }: ProjectsLayoutProps) {
-  return <Container sx={styles.container}>{children}</Container>;
+  return (
+    <section>
+      <Container sx={styles.container}>{children}</Container>
+    </section>
+  );
 }

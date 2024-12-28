@@ -44,24 +44,27 @@ export const ProjectsCard = ({
   link,
 }: ProjectsCardProps) => {
   return (
-    <Link href={link} target="_blank" style={styles.link}>
-      {" "}
-      {/* // !TEMP _blank  */}
-      <Card sx={styles.card}>
-        <CardContent sx={styles.cardContent}>
-          <Typography
-            variant="h3"
-            color="secondary"
-            fontWeight={500}
-            fontSize={"3rem"}
-            lineHeight={"100%"}
-            letterSpacing={"0.15em"}
-          >
-            {title}
-          </Typography>
-          <p style={styles.description}>{description}</p>
-        </CardContent>
-      </Card>
-    </Link>
+    <article>
+      <Link href={link} target="_blank" style={styles.link}>
+        {/* // !TEMP _blank  */}
+        <Card sx={styles.card}>
+          <CardContent sx={styles.cardContent}>
+            <Typography
+              variant="h3"
+              color="secondary"
+              fontWeight={500}
+              fontSize={"3rem"}
+              lineHeight={"100%"}
+              letterSpacing={"0.15em"}
+            >
+              {title}
+            </Typography>
+            <Typography variant="body2" sx={styles.description}>
+              {description}
+            </Typography>
+          </CardContent>
+        </Card>
+      </Link>
+    </article>
   );
 };

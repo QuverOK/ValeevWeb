@@ -1,17 +1,11 @@
 "use client";
 import { paletteColors } from "@/shared";
 import { createTheme } from "@mui/material/styles";
-import { Inter, M_PLUS_1p } from "next/font/google";
+import { M_PLUS_1p } from "next/font/google";
 
 const mplus1p = M_PLUS_1p({
   variable: "--font-mplus1p",
   weight: ["300", "400", "500", "700"],
-  subsets: ["cyrillic", "latin"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  weight: ["500"],
   subsets: ["cyrillic", "latin"],
 });
 
@@ -31,7 +25,8 @@ export const theme = createTheme({
         root: {
           "@media (min-width: 1200px)": {
             maxWidth: "1216px",
-            padding: "0",
+            paddingLeft: "0",
+            paddingRight: "0",
           },
           "@media (max-width: 1200px)": {
             maxWidth: "960px", // Например, для планшетов

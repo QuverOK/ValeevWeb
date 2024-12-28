@@ -2,16 +2,16 @@ import { UiSectionTitle } from "@/shared";
 import { ProjectsLayout } from "../ui/layout";
 import { ProjectsCardContainer } from "../ui/card-container";
 import { ProjectsCard } from "../ui/card";
-import { Posts } from "@/entities/post/model/get";
+import { projects as projectPosts } from "@/entities/mock/model/get";
 
 export const Projects = () => {
-  const projects = Posts.filter((post) => post.postTypeId === "1");
+  const cards = projectPosts; // !TEMP
 
   return (
     <ProjectsLayout>
       <UiSectionTitle>Проекты</UiSectionTitle>
       <ProjectsCardContainer>
-        {projects.map((card) => (
+        {cards.map((card) => (
           <ProjectsCard
             key={card.id}
             title={card.name}

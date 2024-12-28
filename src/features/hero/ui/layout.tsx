@@ -13,8 +13,10 @@ const styles = {
 
 export function HeroLayout({ children }: HeroLayoutProps) {
   return (
-    <Box sx={styles}>
-      <Container>{children}</Container>
-    </Box>
+    <section>
+      <Box sx={styles}>
+        <Container>{children}</Container>
+      </Box>
+    </section>
   );
 }

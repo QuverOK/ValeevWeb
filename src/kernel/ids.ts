@@ -1,3 +1,9 @@
+export type postId = string;
 export type postTypeId = string;
 export type userId = string;
-export type postId = string;
+export type categoryId = string;
+export type postCategoryId = string;
+export type imageId = string;
+export type commentId = string;
+export type roleId = string;
+export type emailId = string;
