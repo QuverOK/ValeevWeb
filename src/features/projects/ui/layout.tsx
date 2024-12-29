@@ -9,6 +9,10 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     gap: "64px",
+
+    "@media (max-width: 1200px)": {
+      maxWidth: "100%",
+    },
   },
 };
 

@@ -16,7 +16,7 @@ export default function Home() {
           <Blogs />
         </Box>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

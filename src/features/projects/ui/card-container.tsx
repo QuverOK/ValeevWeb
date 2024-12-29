@@ -1,15 +1,7 @@
-import { Box } from "@mui/material";
+import { Grid2 } from "@mui/material";
 
 const styles = {
-  display: "flex",
-  gap: "24px",
-  flexDirection: "column",
   justifyContent: "center",
-  "@media (min-width: 1000px)": {
-    display: "block",
-    columns: "2",
-    columnGap: "32px",
-  },
 };
 
 export function ProjectsCardContainer({
@@ -17,5 +9,9 @@ export function ProjectsCardContainer({
 }: {
   children: React.ReactNode;
 }) {
-  return <Box sx={styles}>{children}</Box>;
+  return (
+    <Grid2 container spacing={{ xs: "12px", lg: "32px" }} sx={styles}>
+      {children}
+    </Grid2>
+  );
 }

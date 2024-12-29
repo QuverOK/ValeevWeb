@@ -17,30 +17,6 @@ export const projects = [
     creationDate: new Date("2024-06-24"),
     githubLink: "https://github.com/QuverOK/ValeevWeb",
   },
-  {
-    id: "3",
-    name: "Danila Valeev",
-    description:
-      "В этом проекте я попрактиковал и впервые использовал RTK, RTK Query, а также перенес проект полностью на TypeScript",
-    creationDate: new Date("2024-06-24"),
-    githubLink: "https://github.com/QuverOK/ValeevWeb",
-  },
-  {
-    id: "4",
-    name: "Danila Valeev",
-    description:
-      "В этом проекте я попрактиковал и впервые использовал RTK, RTK Query, а также перенес проект полностью на TypeScript",
-    creationDate: new Date("2024-06-24"),
-    githubLink: "https://github.com/QuverOK/ValeevWeb",
-  },
-  {
-    id: "5",
-    name: "Danila Valeev",
-    description:
-      "В этом проекте я попрактиковал и впервые использовал RTK, RTK Query, а также перенес проект полностью на TypeScript",
-    creationDate: new Date("2024-06-24"),
-    githubLink: "https://github.com/QuverOK/ValeevWeb",
-  },
 ];
 
 export const blogs = [

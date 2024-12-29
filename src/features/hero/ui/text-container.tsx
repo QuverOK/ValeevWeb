@@ -5,11 +5,31 @@ type HeroTextContainerProps = {
 };
 
 const styles = {
-  py: "100px",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
-  gap: "170px",
+  py: "70px",
+  gap: "80px",
+
+  "@media (min-width: 484px)": {
+    py: "70px",
+    gap: "80px",
+  },
+
+  "@media (min-width: 558px)": {
+    py: "80px",
+    gap: "100px",
+  },
+
+  "@media (min-width: 768px)": {
+    py: "100px",
+    gap: "170px",
+  },
+
+  "@media (min-width: 1024px)": {
+    py: "100px",
+    gap: "170px",
+  },
 };
 
 export const HeroContainerText = ({ children }: HeroTextContainerProps) => {

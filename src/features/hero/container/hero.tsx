@@ -1,4 +1,3 @@
-import { Box, Typography } from "@mui/material";
 import { HeroLayout } from "../ui/layout";
 import { HeroContainerText } from "../ui/text-container";
 import { HeroText } from "../ui/text";

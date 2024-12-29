@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <HeaderLayout>
       <HeaderLogo>Danila Valeev</HeaderLogo>
-      <RightsideContainer navigationList={navigationList} />
+      {/* <RightsideContainer navigationList={navigationList} /> */}
     </HeaderLayout>
   );
 };
